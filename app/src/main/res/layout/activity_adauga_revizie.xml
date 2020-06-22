@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdaugaRevizieActivity">
+
+    <EditText
+        android:id="@+id/numarAutoEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Numar Auto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="number">
+
+    </EditText>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/numarKmEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numar Km"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numarAutoEdt">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/dataEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data intrare"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numarKmEdt"
+        android:inputType="date">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/costEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cost"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataEdt"
+        android:inputType="number">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/tipSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costEdt">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/adaugaLaListaRevizii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adauga la Lista Revizii"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipSpinner">
+
+    </Button>
+
+    <Button
+        android:id="@+id/stergeRevizie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sterge Revizie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adaugaLaListaRevizii">
+
+    </Button>
+
+    <Button
+        android:id="@+id/meniuPrincipalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meniu Principal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stergeRevizie">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

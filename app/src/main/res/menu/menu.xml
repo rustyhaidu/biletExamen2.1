@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/toateMeniu"
+        android:title="toate"
+        ></item>
+
+    <item
+        android:id="@+id/normalaMeniu"
+        android:title="normal"
+        >
+
+    </item>
+    <item
+        android:id="@+id/complexaMeniu"
+        android:title="complex"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/medieMeniu"
+        android:title="medie"
+        >
+
+    </item>
+
+</menu>

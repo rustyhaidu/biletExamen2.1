@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   >
+
+    <TextView
+        android:id="@+id/numarAutoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="numarAuto"
+        android:ems="5"/>
+
+    <TextView
+        android:id="@+id/numarKmTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/numarAutoTv"
+        android:text="numarKm"
+        android:ems="5"/>
+
+    <TextView
+        android:id="@+id/dataTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/numarKmTv"
+        android:text="data"
+        android:ems="5"/>
+    <TextView
+        android:id="@+id/costTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dataTv"
+        android:text="cost"
+        android:ems="5"/>
+
+    <TextView
+        android:id="@+id/tipTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/costTv"
+        android:text="tip"
+        android:ems="5"/>
+</RelativeLayout>
